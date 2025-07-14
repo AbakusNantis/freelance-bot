@@ -1,13 +1,22 @@
-import azure.functions as func
+# function_app.py
+import json
 import logging
+import azure.functions as func
+from azure.functions import FunctionApp, AuthLevel
+from ScrapeNewEntries import ScrapeNewEntries
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
+app = func.FunctionApp()
 
-@app.route(route="http_trigger")
-def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
+@app.route(route="hello", auth_level=func.AuthLevel.ANONYMOUS)
 
-    name = req.params.get('name')
+def scrape(req: func.HttpRequest) -> func.HttpResponse:
+    return func.HttpResponse(
+        ScrapeNewEntries().scrape()[0],
+        status_code=200
+    )
+
+
+    """name = req.params.get('name')
     if not name:
         try:
             req_body = req.get_json()
@@ -22,4 +31,4 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(
              "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
              status_code=200
-        )
+        )"""
