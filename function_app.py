@@ -1,34 +1,26 @@
 # function_app.py
 import json
 import logging
+
 import azure.functions as func
 from azure.functions import FunctionApp, AuthLevel
 from ScrapeNewEntries import ScrapeNewEntries
 
 app = func.FunctionApp()
 
-@app.route(route="hello", auth_level=func.AuthLevel.ANONYMOUS)
-
-def scrape(req: func.HttpRequest) -> func.HttpResponse:
-    return func.HttpResponse(
-        ScrapeNewEntries().scrape()[0],
-        status_code=200
-    )
+@app.route(route="scrapenewentries", auth_level=func.AuthLevel.ANONYMOUS, methods=["GET"])
+#@app.route(auth_level=func.AuthLevel.ANONYMOUS)
 
 
-    """name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
-
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
+def scrapeNewEntries(req: func.HttpRequest) -> func.HttpResponse:
+#def ScrapeNewEntries() -> func.HttpResponse:
+    try:
+        urls = ScrapeNewEntries().scrape()
         return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
-             status_code=200
-        )"""
+            json.dumps(urls),
+            status_code=200,
+            mimetype="application/json"
+        )
+    except Exception as e:
+        logging.exception("Scrape fehlgeschlagen")
+        return func.HttpResponse(f"Error: {e}", status_code=500)
