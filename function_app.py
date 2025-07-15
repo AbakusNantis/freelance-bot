@@ -8,12 +8,9 @@ from ScrapeNewEntries import ScrapeNewEntries
 
 app = func.FunctionApp()
 
-@app.route(route="scrapenewentries", auth_level=func.AuthLevel.ANONYMOUS, methods=["GET"])
-#@app.route(auth_level=func.AuthLevel.ANONYMOUS)
-
+@app.route(route="scrape-new-entries", auth_level=func.AuthLevel.ANONYMOUS, methods=["GET"])
 
 def scrapeNewEntries(req: func.HttpRequest) -> func.HttpResponse:
-#def ScrapeNewEntries() -> func.HttpResponse:
     try:
         urls = ScrapeNewEntries().scrape()
         return func.HttpResponse(
