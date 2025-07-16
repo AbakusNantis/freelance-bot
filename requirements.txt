@@ -1,9 +1,14 @@
 azure-functions
 azure-data-tables
+azure-identity
+azure-keyvault-secrets
 bs4
 datetime
+dotenv
 logging
 requests
 lxml
 fastapi
 pydantic
+playwright
+dataclasses

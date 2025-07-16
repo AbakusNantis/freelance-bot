@@ -1,0 +1,24 @@
+Yaml oder Json für jede Person aufsetzen
+--> Keyword Sammlung
+--> Ausschlusskriterien einbauen (z.B. Deutsch bei Vasco, vor Ort bei Vasco)
+
+Es sollte so sein, dass ein erstes Matching nur über die Keywords gemacht wird, also z.B. Keyword Ranking von 75 bei Vasco --> GPT wird angeworfen
+Bestimmte Keywords könnten mehr gewichtet werden, z.B. nearshore bei Vasco --> verschiedene Kategorien von Keywords einsetzen
+
+Metrik wird spannend, aber irgendwie so: 
+Mini Keywords machen 33 %
+Top Keywords machen 33% 
+Überschriften machen 33%
+
+Mini Keywords: insgesamt 20, davon 3 erwischt --> Ranking = 3/20 Ranking
+Top Keywords: insgesamt 3, davon 2 erwischt --> Ranking = 1/3
+Überschriften: Keyword getroffen --> 1/3
+
+--> Ranking wäre hier: 81 % --> GPT muss Ranking
+
+Dies muss getestet und verfeinert werden, 
+vor allem weil im Beispiel bei schlechter Überschrift schon ausgeschlossen wird... --> NICHT GUT SO 
+(vielleicht hier doch auch die Überschrift mit GPT?)
+
+
+Problem: es entgehen z.B. solche Projekte: "Kurzprojekt"
