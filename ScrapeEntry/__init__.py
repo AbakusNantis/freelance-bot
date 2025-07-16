@@ -10,18 +10,28 @@ class FreelanceClient:
     def __init__(self, headless: bool = True):
         self._pw = sync_playwright().start()
         self.browser = self._pw.chromium.launch_persistent_context(
-            user_data_dir="profile_freelance",
+            user_data_dir=".profile_freelance",
             headless=headless,
             viewport={'width':1280, 'height':800}
         )
         self.page = self.browser.new_page()
+    
+    def accept_cookies(self, page):
+        try:
+            # Warten bis der Button erscheint (Timeout nach 3 Sekunden)
+            page.wait_for_selector("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll", timeout=3000)
+            page.click("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")
+            print("Cookie Consent akzeptiert.")
+        except Exception:
+            print("Kein Cookie Consent gefunden – geht weiter.")
 
     def login(self) -> None:
         self.page.goto("https://www.freelance.de/login.php")
+        self.accept_cookies(self.page) #cookie button
         self.page.fill("#username", KeyVaultManager().get_secret('freelance-username'))
         self.page.fill("#password", KeyVaultManager().get_secret('freelance-password'))
-        self.page.click("button[type=submit]")
-        self.page.wait_for_selector("nav >> text=Mein Profil")  # Erfolgskriterium
+        self.page.click("input[type=submit]")
+        self.page.wait_for_selector("h3:has-text('Mein Profil')") # Erfolgskriterium
         print("Login success.")
 
     def close(self):
@@ -29,7 +39,9 @@ class FreelanceClient:
         self._pw.stop()
 
 if __name__ == "__main__":
-    FreelanceClient().login()
+    fc = FreelanceClient(headless=False)
+    fc.login()
+    fc.close()
 
 
 @dataclass
