@@ -6,7 +6,7 @@ from dataclasses import dataclass
 import os, re
 from utils.KVManager import KeyVaultManager
 
-class FreelanceClient:
+class FreelanceActions:
     def __init__(self, headless: bool = True):
         self._pw = sync_playwright().start()
         self.browser = self._pw.chromium.launch_persistent_context(
@@ -39,7 +39,7 @@ class FreelanceClient:
         self._pw.stop()
 
 if __name__ == "__main__":
-    fc = FreelanceClient(headless=False)
+    fc = FreelanceActions(headless=False)
     fc.login()
     fc.close()
 

@@ -1,0 +1,40 @@
+Rahmeninformationen
+• Start: 18.08.2025
+• Ende: 31.12.2027
+• Auslastung: Vollzeit (ca. 95 PT in 2025, je 220 PT in 2026 und 2027)
+• Location: Frankfurt am Main
+• Remote: Teilweise remote möglich, regelmäßige Vor-Ort-Termine erforderlich (z. B. für Arbeit mit sensiblen Daten)
+• Sprachen: Englisch, Deutsch
+
+Projektbeschreibung
+Im Rahmen eines groß angelegten Technologieprogramms wird eine zukunftsfähige, cloudbasierte Netzwerkplattform entwickelt, die als Grundlage für die digitale Infrastruktur eines Großkonzerns dient. Ziel ist es, ein skalierbares und automatisiertes Netzwerkökosystem für verschiedene Campus- und Standorttypen (z. B. Offices, Industrieanlagen, öffentliche Gebäude) zu konzipieren und technisch umzusetzen.
+Kernbestandteile sind:
+• Evaluierung und Auswahl geeigneter Netzwerktechnologien und -hersteller für verschiedene Anwendungsszenarien.
+• Entwicklung moderner Netzwerkkonzepte für Anbindungen an externe Infrastrukturen (MPLS, SD-WAN, Internet).
+• Aufbau und Automatisierung einer zentralen Netzwerkplattform inklusive Single Source of Truth und geeigneter Frameworks.
+• Umsetzung der Plattform auf Basis moderner Webtechnologien und Containerlösungen in der Cloud.
+
+Aufgaben
+• Konzeption und Umsetzung komplexer Webanwendungen mit Fokus auf Backend-Services mittels Python und Django
+• Datenbankentwicklung mit PostgreSQL
+• Aufbau und Pflege von CI/CD-Pipelines sowie Arbeiten mit Tools wie Git, GitLab, Artifactory, Docker, Kubernetes, OpenShift
+• Unterstützung beim Aufbau einer netzwerkautomatisierten Infrastruktur (u.a. mit Ansible, Nautobot, Netbox)
+• Durchführung von Unit- und E2E-Tests
+• Erstellung und Pflege der Systemdokumentation in Deutsch und Englisch
+• Enge Zusammenarbeit mit Projektmanagern, Architekten und Entwicklern in agilen Teams (Scrum/Kanban)
+• Aktive Teilnahme an Sprint Plannings, Reviews, Retrospektiven und Dailys
+
+Must-haves
+• Mind. 5 Jahre Erfahrung mit Python, speziell im Bereich Backend-Entwicklung und Web-Applikationen
+• Mind. 3 Jahre Erfahrung mit Django
+• Fundierte Kenntnisse im Bereich CI/CD, inkl. Fehleranalyse in Pipelines (z. B. GitLab)
+• Mind. 3 Jahre praktische Erfahrung in der Netzwerkadministration
+• Nachweisbare Erfahrung in der Automatisierung von Netzwerkinfrastrukturen mit mindestens zwei Projekten (z. B. mit Ansible, Nautobot oder Netbox)
+
+Nice-to-haves
+• Projekterfahrung mit Docker und OpenShift in Cloud-Umgebungen (idealerweise AWS)
+• 3+ Jahre Erfahrung mit PostgreSQL
+• Fundierte Kenntnisse in Python unittest oder vergleichbaren Test-Frameworks
+• Praktische Erfahrung in agilen Arbeitsumgebungen (z. B. Scrum, SAFe, Kanban)
+• Kenntnisse in Terraform im Kontext "Infrastructure as Code"
+• Sprachkenntnisse in Deutsch und Englisch
