@@ -9,12 +9,17 @@ Gibt die neuesten 100 Einträge als Liste zurück.
 [ ] Return Header
 [ ] Return Content
 [ ] Return Startdatum
-Optional:
+
+Optional Prio 1:
+[ ] Return Contact
+
+Optional Prio 2:
 [ ] Fill_Text_Field (Füllt das Textfeld)
 [ ] select_cv
 [ ] click_additional_fields
 [ ] send_application
 [ ] random_waiting_time
+
 #### [ ] List Manager
 [x] load_table
 [x] upload (CSV mit neuem Dataframe überschreiben)
@@ -56,7 +61,7 @@ Was sollte an Informationen verfügbar sein?
             [ ] Prompt aufrufen bzw. erstellen
             [ ] CV mit Projektbeschreibung vergleichen
             [ ] Ausschlusskriterien erneut prüfen
-            [ ] scrape_kontaktperson --> Array mit [Name, Email, Telefon]
+            Optional: [ ] scrape_kontaktperson --> Array mit [Name, Email, Telefon]
             [ ] einschaetzung_geben --> [ja/nein; Begründung in einem kurzen Satz; Kontaktperson Name; Kontaktperson Email; Kontaktperson Telefon]
                 - wenn nein --> ID entfernen
                 - wenn ja: Array irgendwohin in eine temporäre Liste speichern (im storage temp.csv oder so...)

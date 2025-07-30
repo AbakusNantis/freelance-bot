@@ -6,6 +6,9 @@ from utils.KVManager import KeyVaultManager
 from io import StringIO
 import pandas as pd
 
+dataframe_cols = ["url", "date", "url_checked"]
+
+
 class DefaultTable:
     """
     Default table backed by a CSV in Azure Blob Storage.
@@ -43,7 +46,7 @@ class DefaultTable:
             df = pd.read_csv(StringIO(csv_text))
         except ResourceNotFoundError:
             # Blob existiert nicht → neues leeres DataFrame mit Standard-Spalten
-            df = pd.DataFrame(columns=["url", "date", "flag01"])
+            df = pd.DataFrame(columns=dataframe_cols)
             # direkt hochladen, damit der Blob beim nächsten mal existiert
             self._upload(df)
             print(f"Blob '{self.csv_name}' nicht gefunden. Leeres CSV mit Spalten {df.columns.tolist()} angelegt.")
@@ -54,7 +57,7 @@ class DefaultTable:
         # überschreibe den Blob
         self.blob_client.upload_blob(output, overwrite=True)
 
-    def write_on_table(self, key: str, column: str, value):
+    def check_col_for_key (self, key: str, column: str, value):
         """
         Sucht in df['url'] nach key:
         - existiert key: setzt df.loc[... , column] = value
@@ -82,7 +85,7 @@ class DefaultTable:
         self._upload(df)
         self.df = df
 
-    def delete_from_table(self, key: str):
+    def delete_url_from_table(self, key: str):
         """
         Löscht die gesamte Zeile mit url == key
         """
@@ -95,6 +98,6 @@ class DefaultTable:
 
 if __name__ == "__main__":
     table = DefaultTable()
-    table.write_on_table("https://beispiel.de", "status", "verarbeitet")
-    table.write_on_table("https://alte-url.de", "status", "verarbeitet")
-    table.delete_from_table("https://alte-url.de")
+    table.check_col_for_key("https://beispiel.de", "url_checked", False)
+    table.check_col_for_key("https://alte-url.de", "url_checked", True)
+    table.delete_url_from_table("https://alte-url.de")
