@@ -43,19 +43,25 @@ class FreelanceActions:
         self.page.goto(f"https://www.freelance.de/projekte?remotePreference=remote_remote--remote&lastUpdate=D{page}--{day}&pageSize=100")     
         self.page.wait_for_selector("search-project-card")
 
-        pages = len(page.query_selector_all(".page-item"))
-        page_counter = 1
+        pages = len(self.page.query_selector_all(".page-item"))
 
-        for page_counter <= pages:
-        # Alle Karten selektieren
-        cards = self.page.query_selector_all("search-project-card")
+        page_counter = 1
         all_links = []
-        for card in cards:
-            # Innerhalb jeder Karte nach dem gewünschten Link suchen
-            link = card.query_selector("a.small.fw-semibold.link-warning")
-            if link:
-                href = link.get_attribute("href")
-                all_links.append(href)
+
+        for page_counter in range(pages):
+            # Ggf nochmal die Seite laden
+            self.page.goto(f"https://www.freelance.de/projekte?remotePreference=remote_remote--remote&lastUpdate=D{page_counter}--{day}&pageSize=100")
+
+            # Alle Karten selektieren
+            cards = self.page.query_selector_all("search-project-card")
+        
+            for card in cards:
+                # Innerhalb jeder Karte nach dem gewünschten Link suchen
+                link = card.query_selector("a.small.fw-semibold.link-warning")
+                if link:
+                    href = link.get_attribute("href")
+                    all_links.append(href)
+            page_counter +=1
 
         print(len(all_links))
         
@@ -67,7 +73,7 @@ class FreelanceActions:
 def main():
     fc = FreelanceActions(headless=False)
     #fc.login()
-    fc.parse_new_projects()
+    fc.parse_new_projects("yesterday")
     fc.close()
 
 if __name__ == "__main__":
