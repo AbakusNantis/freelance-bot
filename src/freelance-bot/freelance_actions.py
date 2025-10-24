@@ -5,6 +5,7 @@ from playwright.sync_api import sync_playwright
 from dataclasses import dataclass
 import os, re
 from utils.KVManager import KeyVaultManager
+from time import sleep
 
 class FreelanceActions:
     def __init__(self, headless: bool = True):
@@ -33,15 +34,44 @@ class FreelanceActions:
         self.page.click("input[type=submit]")
         self.page.wait_for_selector("h3:has-text('Mein Profil')") # Erfolgskriterium
         print("Login success.")
+    
+    def parse_new_projects(self, day: str = "today", page: int = 0) -> None:
+        """
+        day: today or yesterday
+        int: usually 0 or 1 (page folds after 100 entries)
+        """
+        self.page.goto(f"https://www.freelance.de/projekte?remotePreference=remote_remote--remote&lastUpdate=D{page}--{day}&pageSize=100")     
+        self.page.wait_for_selector("search-project-card")
+
+        pages = len(page.query_selector_all(".page-item"))
+        page_counter = 1
+
+        for page_counter <= pages:
+        # Alle Karten selektieren
+        cards = self.page.query_selector_all("search-project-card")
+        all_links = []
+        for card in cards:
+            # Innerhalb jeder Karte nach dem gewünschten Link suchen
+            link = card.query_selector("a.small.fw-semibold.link-warning")
+            if link:
+                href = link.get_attribute("href")
+                all_links.append(href)
+
+        print(len(all_links))
+        
 
     def close(self):
         self.browser.close()
         self._pw.stop()
 
-if __name__ == "__main__":
+def main():
     fc = FreelanceActions(headless=False)
-    fc.login()
+    #fc.login()
+    fc.parse_new_projects()
     fc.close()
+
+if __name__ == "__main__":
+    main()
 
 
 @dataclass
