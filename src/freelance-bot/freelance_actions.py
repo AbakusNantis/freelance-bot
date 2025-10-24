@@ -35,23 +35,26 @@ class FreelanceActions:
         self.page.wait_for_selector("h3:has-text('Mein Profil')") # Erfolgskriterium
         print("Login success.")
     
-    def parse_new_projects(self, day: str = "today", page: int = 0) -> None:
+    def parse_new_projects(self, day: str = "today", page: int = 1) -> None:
         """
         day: today or yesterday
         int: usually 0 or 1 (page folds after 100 entries)
         """
-        self.page.goto(f"https://www.freelance.de/projekte?remotePreference=remote_remote--remote&lastUpdate=D{page}--{day}&pageSize=100")     
+        self.page.goto(f"https://www.freelance.de/projekte?remotePreference=remote_remote--remote&lastUpdate=D1--{day}&page={page}&pageSize=100")     
         self.page.wait_for_selector("search-project-card")
 
         pages = len(self.page.query_selector_all(".page-item"))
+        print(f"{pages} pages of new infos")
 
-        page_counter = 1
+        page_counter = 0
         all_links = []
 
         for page_counter in range(pages):
+            print (f"Scanning Page {page_counter}")
             # Ggf nochmal die Seite laden
-            self.page.goto(f"https://www.freelance.de/projekte?remotePreference=remote_remote--remote&lastUpdate=D{page_counter}--{day}&pageSize=100")
-
+            self.page.goto(
+                f"https://www.freelance.de/projekte?remotePreference=remote_remote--remote&lastUpdate=D1--{day}&page={page_counter}&pageSize=100")
+            sleep(3)
             # Alle Karten selektieren
             cards = self.page.query_selector_all("search-project-card")
         
