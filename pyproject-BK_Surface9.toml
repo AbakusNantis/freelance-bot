@@ -18,10 +18,7 @@ dependencies = [
     "python-dotenv (>=1.1.1,<2.0.0)",
     "azure-functions (>=1.23.0,<2.0.0)",
     "playwright (>=1.55.0,<2.0.0)",
-    "cloudscraper (>=1.2.71,<2.0.0)",
-    "openpyxl (>=3.1.5,<4.0.0)",
-    "nameparser (>=1.1.3,<2.0.0)",
-    "gender-guesser (>=0.4.0,<0.5.0)"
+    "cloudscraper (>=1.2.71,<2.0.0)"
 ]
 
 
@@ -31,4 +28,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 # keep package mode ON (default) and point to your src package
-packages = [{ include = "freelanceBot", from = "src" }]
+packages = [{ include = "freelance-bot", from = "src" }]
