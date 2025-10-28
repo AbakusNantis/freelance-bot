@@ -1,6 +1,6 @@
 Yaml oder Json für jede Person aufsetzen
 --> Keyword Sammlung
---> Ausschlusskriterien einbauen (z.B. Deutsch bei Vasco, vor Ort bei Vasco)
+--> Ausschlusskriterien einbauen (z.B. Deutsch bei Vasco, vor Ort bei Vasco, SAP)
 
 Es sollte so sein, dass ein erstes Matching nur über die Keywords gemacht wird, also z.B. Keyword Ranking von 75 bei Vasco --> GPT wird angeworfen
 Bestimmte Keywords könnten mehr gewichtet werden, z.B. nearshore bei Vasco --> verschiedene Kategorien von Keywords einsetzen

@@ -1,0 +1,26 @@
+Für unseren Kunden suchen wir ab Mitte August 2025 einen Kotlin/React Fullstack Developer/Architekt (m/w/d) mit DevOps & AWS Know How. Der Einsatz findet in Vollzeit statt und ist langfristig remote geplant.
+
+Bitte sehen Sie von Bewerbungen ab, wenn Sie die Must Haves nicht erfüllen.
+
+Aufgaben:
+- Aufbau und evolutionäre Weiterentwicklung der zur fachlichen Domäne passenden Micro Service Architektur mit Mitteln des Domain Driven Designs
+- Fördern und Treiben der Umsetzung der technologischen Strategie, des architektonisch-technischen Wissensaustauschs und der Innovation und Standardisierung im Projekt
+- Beratung bei der Umsetzung der techn. Architektur in der Softwareentwicklung
+- Implementierung technischer Komponenten in Applikationen auf Basis der genutzten Technologien (Microservice-Architekturen, Spring, AWS, Messaging, Kotlin) inkl. dazugehöriger Schnittstellen, Module und entsprechender Datenbanken
+- Umsetzung und Optimierung von CI/CD-Pipelines auf Basis von Gitlab CI, Jenkins, Docker und OpenShift (Kubernetes)
+- Sicherstellung eines möglichst automatisierten stabilen Anwendungsbetriebs unter kontinuierlicher Verbesserung der Architektur, Prozesse und Tools.
+- Programmierung / Implementierung / Customizing technischer Komponenten in Applikationen auf Basis der genutzten Technologien inkl. dazugehöriger Schnittstellen, Module und entsprechender Datenbanken unter Einhaltung der Standards des Auftraggebers (z.B. Nutzung der standardisierten Entwicklungsumgebungen und Programmierrichtlinien)
+
+Muss-Anforderungen:
+- Softwareentwicklung und Anwendungs-architektur: Exzellente Programmier- und Architekturkenntnisse Backend (Mindestens 5 Jahre Erfahrung in Micro-Service-Architekturen auf Basis von Kotlin)
+- Softwareentwicklung und Anwendungs-architektur: Exzellente Programmier- und Architekturkenntnisse Frontend (Mindestens 3 Jahre Erfahrung in der Front-end-Entwicklung mit React)
+- DevOps: Exzellente Methoden- und Technologiekenntnisse im Kontext DevOps (Mindestens 3 Jahre Erfahrung beim Aufbau von DevOps-Teams mit echter Ende-zu-Ende-Verantwortung)
+- Infrastruktur: Praktische Erfahrung in: CI/CD Pipeline und Infrastrukturthemen (Mindestens 5 Jahre nachgewiesene Erfahrungen bei der Ausgestaltung und Einführung einer CI/CD Pipeline und Infrastrukturthemen)
+- Cloud: Exzellente Programmiererfahrungen im Umgang mit der Cloud (Mindestens 5 Jahre Erfahrung in Micro-Service-Architekturen auf Basis von AWS)
+
+Soll-Anforderungen:
+- Exzellente Kenntnisse von Scrum und agiler Engineering-Praktiken (Mindestens 5 Jahre Erfahrung im agilen Umfeld und bei der Etablierung von XP-Praktiken.)
+- Praktische Erfahrung im Aufbau von OpenShift Infrastrukturen (Mindestens 3 Jahre nachgewiesene praktische Erfahrung in der Arbeit mit OpenShift Infrastrukturen)
+- Erfahrung mit dem Monitoring von Infrastructure und Loganalysen (Mindestens 3 Jahre nachgewiesene praktische Erfahrung in entsprechenden SW-Lösungen, z. B. mit dem EFK Stack, Prometheus, Kibana, Grafana)
+- Erfahrung mit Test Driven Development (Mindestens 3 Jahre nachgewiesene praktische Erfahrung in der Implementierung von Software-Lösungen mit dem TDD-Ansatz)
+- Erfahrungen mit professionellen Web-Frameworks (Mindestens 3 Jahre Erfahrung in der Verwendung von Spring Boot oder vergleichbarer Frameworks)

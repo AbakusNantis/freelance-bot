@@ -31,8 +31,3 @@ if __name__ == "__main__":
     #target_url = "https://www.freelance.de/projekte?remotePreference=remote_remote--remote&pageSize=100"
     fls = ScrapeNewEntries()
     print(fls.scrape())
-
-
-
-#/html/body/app-root/div/app-content/div/projects-search/search-view/div/div/div/search-project-card[1]/a
-#/html/body/app-root/div/app-content/div/projects-search/search-view/div/div/div/search-project-card[2]/a

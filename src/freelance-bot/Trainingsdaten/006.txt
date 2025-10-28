@@ -1,0 +1,28 @@
+Für ein langfristiges Projekt bei einem führenden Pharmaunternehmen in München suchen wir einen erfahrenen Senior Data Analyst (m/w/d) mit tiefem Verständnis für regulatorische Anforderungen und klinische Datenanalysen.
+
+Aufgaben:
+
+- Analyse und Aufbereitung von Studiendaten (RWE, RCT) zur Unterstützung von Market Access, Medical Affairs und Clinical Operations
+- Entwicklung und Pflege von Dashboards mit Power BI oder Tableau
+- Validierung und Plausibilisierung von Daten aus verschiedenen Quellen (z.?B. klinische Studien, interne CRM-Systeme, Verkaufszahlen)
+- Zusammenarbeit mit Data Scientists und Epidemiologen zur Modellierung patientenzentrierter Fragestellungen
+- Ableitung datengetriebener Handlungsempfehlungen für strategische Entscheidungen
+
+Anforderungen:
+
+- Mindestens 5 Jahre Erfahrung in der Datenanalyse, idealerweise in der pharmazeutischen Industrie
+
+- Fundierte Kenntnisse in SQL, Python oder R
+
+- Erfahrung mit Datenvisualisierungstools (Power BI, Tableau, ggplot2)
+
+- Kenntnisse von GxP-/GAMP-Anforderungen von Vorteil
+
+- Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift
+
+Rahmendaten:
+
+- Start: ab sofort oder nach Vereinbarung
+- Auslastung: 4–5 Tage/Woche
+- Laufzeit: initial 6 Monate, Option auf Verlängerung
+- Standort: München, Remote-Anteil nach Absprache möglich

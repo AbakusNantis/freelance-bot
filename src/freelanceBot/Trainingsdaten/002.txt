@@ -1,0 +1,37 @@
+wir sind auf der Suche nach einem Software Developer Microservice Architektur (m/w/d):
+
+Aufgaben:
+- Aufbau und evolutionäre Weiterentwicklung der zur fachlichen Domäne passenden Micro Service Architektur mit Mitteln des Domain Driven Designs
+
+- Fördern und Treiben der Umsetzung der technologischen Strategie, des architektonisch-technischen Wissensaustauschs und der Innovation und Standardisierung im Projekt
+
+- Beratung bei der Umsetzung der techn. Architektur in der Softwareentwicklung
+
+- Implementierung technischer Komponenten in Applikationen auf Basis der genutzten Technologien (Microservice-Architekturen, Spring, AWS, Messaging, Kotlin) inkl. dazugehöriger Schnittstellen, Module und entsprechender Datenbanken
+
+- Umsetzung und Optimierung von CI/CD-Pipelines auf Basis von Gitlab CI, Jenkins, Docker und OpenShift (Kubernetes)
+
+- Sicherstellung eines möglichst automatisierten stabilen Anwendungsbetriebs unter kontinuierlicher Verbesserung der Architektur, Prozesse und Tools. Programmierung / Implementierung / Customizing technischer Komponenten in Applikationen auf Basis der genutzten Technologien inkl. dazugehöriger Schnittstellen, Module und entsprechender Datenbanken unter Einhaltung der Standards des Auftraggebers (z.B. Nutzung der standardisierten Entwicklungsumgebungen und Programmierrichtlinien)
+
+Skills:
+- Softwareentwicklung und Anwendungsarchitektur: Exzellente Programmier- und Architekturkenntnisse Backend
+Mindestens 5 Jahre Erfahrung in Micro-Service-Architekturen auf Basis von Kotlin
+
+- Softwareentwicklung und Anwendungsarchitektur: Exzellente Programmier- und Architekturkenntnisse Frontend
+Mindestens 3 Jahre Erfahrung in der Front-end-Entwicklung mit React
+
+- DevOps: Exzellente Methoden- und Technologiekenntnisse im Kontext DevOps
+Mindestens 3 Jahre Erfahrung beim Aufbau von DevOps-Teams mit echter Ende-zu-Ende-Verantwortung
+
+- Infrastruktur: Erfahrungen bei der Ausgestaltung und Einführung einer CI/CD Pipeline und Infrastrukturthemen
+Mindestens 5 Jahre nachgewiesene praktische Erfahrung in: Gitlab CI
+
+- Cloud: Exzellente Programmiererfahrungen im Umgang mit der Cloud
+Mindestens 5 Jahre Erfahrung in Micro-Service-Architekturen auf Basis von AWS
+
+Rahmenbedingungen:
+- Start: 18.08.2025
+- Dauer: 18.08.2025 - 31.12.2028
+- Auslastung: Fulltime
+- Ort: Remote
+- Sprache: Deutsch

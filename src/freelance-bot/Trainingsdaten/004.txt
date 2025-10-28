@@ -1,0 +1,77 @@
+Für einen unserer Kunden sind wir aktuell auf der Suche nach einem Frontend-Entwickler im KI und Data-Science Umfeld mit Wohnsitz in Deutschland.
+
+
+Einsatzort: Überwiegend remote. Präsenz vor Ort in Ausnahmefällen in Berlin oder Bonn nach Absprachen.
+
+Auslastung: 80 - 100%
+
+
+Zu Ihren Aufgaben gehören:
+
++ Entwicklung und Wartung von modernen Web- und Mobile-Anwendungen
+
++ Implementierung responsiver Benutzeroberflächen mit aktuellen Frameworks (z. B. React, Angular, Vue.js)
+
++ Optimierung von Performance und Benutzerfreundlichkeit
+
++ Zusammenarbeit mit Backend-Entwicklern zur API-Integration
+
++ Sicherstellung der Barrierefreiheit und Usability
+
++ Optimierung von Performance und Benutzerfreundlichkeit
+
++ Zusammenarbeit mit Backend-Entwicklern zur API-Integration
+
++ Umgang mit RESTful-und GraphQL-APIs
+
++ Entwicklung in modernen Frontend-Frameworks (z. B. React, Angular, Vue.js)
+
+Anforderungen:
+
+Must-haves:
+
++ IAAP-Zertifikat oder vergleichbar (digitale Barrierefreiheit)
+
++ Bachlorabschluss in Medieninformatik, Informatik, Wirtschaftsinformatik, Webentwicklung oder vergleichbarer Studienrichtung und eine Berufserfahrung von mindestens 4 Jahren in der Softwareentwicklung im Frontend. Oder abgeschlossene Berufsausbildung zum Fachinformatiker (Anwendungsentwicklung) mit Schwerpunkt Web und eine Berufserfahrung von mindestens 4 Jahren in vergleichbarer Tätigkeit
+
++ Berufserfahrung:
+
+o 2 Jahre Erfahrung in der Softwareentwicklung bei der Anbindung von großen Datenquellen oder vergleichbar in den letzten 4 Jahren sowie barrierefreie Oberflächen
+
+o 4 Jahre Erfahrung mit HTML, CSS, JavaScript, TypeScript
+
+o 4 Jahre Erfahrung mit CI/CD-Prozessen und Testing-Frameworks (z. B. Jest, Cypress)
+
+o 4 Jahre Erfahrung im Umgang mit RESTful- und GraphQL-APIs
+
+o Mindestens 1 nachweisbare Projekterfahrung in der Anwendung einer der hier genannten Programmiersprachen oder Tools:
+
+- HTML5
+
+- CSS3
+
+- JavaScript
+
+- TypeScript
+
+- React
+
+- Angula
+
+- Vue.js
+
+- Sass
+
+- Tailwind CSS
+
+- Jest
+
+- Cypres
+
++ Sprachkenntnisse: Deutschkenntnisse C1-Niveau oder Englisch C1-Niveau
+
+Konnten wir Ihr Interesse wecken? Dann freuen wir uns auf die Zusendung Ihres aussagekräftigen Expertenprofils unter Angabe Ihrer Stundensatzvorstellung.
+
+Start: 01.10.2025
+Dauer: 2 Jahre
+Ort: Remote

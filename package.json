@@ -1,0 +1,22 @@
+{
+  "name": "freelance-bot",
+  "version": "1.0.0",
+  "description": "Besucht die freelance Seite mit den neuesten 100 Einträgen. \r Gibt die neuesten 100 Einträge als Liste zurück.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbakusNantis/freelance-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbakusNantis/freelance-bot/issues"
+  },
+  "homepage": "https://github.com/AbakusNantis/freelance-bot#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  }
+}

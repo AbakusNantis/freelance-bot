@@ -1,0 +1,41 @@
+Für unseren Kunden suche ich einen Senior Developer Python (m/w/d) Netzwerke für ein remote Projekt & Frankfurt.
+
+Aufgaben:
+• Konzeption und Implementierung von technisch anspruchsvollen Softwarelösungen mit einer Vielzahl von Funktionen, die den Anforderungen des Auftraggebers entsprechen.
+• Schreiben von sauberem, effizientem und vollständig dokumentiertem Code unter Verwendung angemessener Softwareentwicklungspraktiken und -standards .
+• Die technische Umsetzung und Codierung der erforderlichen Funktionen als Webanwendungen mit der Technologie Django und Python.
+• Die technische Umsetzung / die Codierung der erforderlichen Funktionen in der Datenbank mit PostgreSQL.
+• Erstellen von Lieferpaketen für die betreffenden Applikationen unter Einsatz der im jeweiligen Kontext geltenden CI/CD Werkzeuge und den notwendigen Tools (z.B. Git, GitLab, Artifac-tory, Docker, Kubernetes, OpenShift).
+• Einrichten, Pflegen und Weiterentwickeln von Entwicklungsumgebungen.
+• Die Erstellung von Unit-/E2E-Tests u.a. für die Testautomatisierung, wie im jeweiligen Aufgabenbezug notwendig.
+• Testen und Debuggen von Softwareanwendungen, um sicherzustellen, dass diese vorgegebene Qualitätsstandards erfüllen.
+• Teilnahme an Code-Reviews und Bereitstellung konstruktiven Feedbacks an andere Entwickler.
+• Fachliche Teilnahme an der Planung, Gestaltung und Implementierung von Softwareprojekten unter Anwendung von Methodiken wie SCRUM.
+• Fachlicher Austausch mit Projektmanagern, Designern und anderen Entwicklern, um eine rechtzeitige und erfolgreiche Fertigstellung von Projekten, gemäß Auftraggeber-Vorgaben sicherzustellen.
+• Teilnahme an relevanten fachlichen Meetings und Bereitstellung regelmäßiger Updates für Projektmanager und andere Projektteamressourcen.
+• Durchführen von Aufwandschätzungen für die Implementierung und alle zur technischen Inbetriebnahme notwendigen Aufwände der im Anforderungskontext notwendigen Funktionen.
+• Erstellen und Pflegen von für die Wartung und den Betrieb der entwickelten Komponenten notwendigen Systemdokumentationen.
+• Einhalten der vereinbarten Standards (Rahmenvertrag, Programmierrichtlinien, Process Library, Bereichs- und Projekthandbuch).
+• Dokumentation aller Ergebnisse in den im jeweiligen Projektkontext genutzten Werkzeugen und in der im jeweiligen Projektkontext geforderten Sprache (Deutsch und Englisch)
+
+Anforderungen must have:muss erfüllt sein!
+• Umfangreiche und aktuelle Kenntnisse in der Programmierung mit Python. Mindestens 5 Jahre praktische Erfahrungen mit Python zur Entwicklung von Web-Applikationen mit Focus auf Backend-Systemen mit APIs und Services.
+• Umfangreiche und aktuelle Kenntnisse in der Programmierung mit dem Django Web-Framework: Mindestens 3 Jahren spezifischer Erfahrung mit Django für Webanwendungen.
+• Entwicklung mit CI/CD und Versionskontrolle. Kenntnisse in der Funktionsweise existierender CI/CD-Pipelines und Kompetenz in der Fehlerbehebung: Mind. 3 Jahre Erfahrung in der Fehlerbehebung in der CI/CI Pipelines z.B. GitLab.
+• Netzwerkadministration, Nachgewiesene Erfahrung in der Administration und Erweiterung von IP-Netzwerken. 3 Jahre Erfahrung in der Administration und Erweiterung von IP-Netzwerken
+• Netzwerkautomatisierung, Nachgewiesene Erfahrung in der Automatisierung von Netzwerkinfrastruktur. 2 Projektreferenzen, bei denen an der Workflow-Orchestrierung oder Automatisierung von Netzwerken mitgearbeitet wurde, z.B. mit den Tools Nautobot, Ansible, Netbox
+
+Anforderungen nice to have:
+Containerisierung mit Cloud-Operationen. Nachgewiesene Erfahrung im Umgang mit Docker und Openshift für Container-Infrastruktur im AWS-Betrieb für Cloud-Lösungen: Mind. 3 Projektreferenzen in den mit modernen Cloud-Infrastruktur mit Containerisierung über Docker und Openshift gearbeitet wurde.
+Erfahrung mit relationalen Datenbanken: Mindestens 3 Jahre Erfahrung in der Datenbankentwicklung mit z.B. PostgreSQL.
+Testfähigkeiten Umfassende Erfahrung mit Python Unittest für das Testen von Anwendungen zur Sicherstellung der Zuverlässigkeit und Robustheit des Codes. Min. 5 Jahre
+Erfahrung in der Arbeit in agilen Umgebungen unter Verwendung von Methoden wie z.B Scrum, SAFE, Kanban; min. 3 Jahre
+Erfahrung mit Terraform zur Verwaltung von Infrastruktur als Code innerhalb von AWS. Min. 2 Projektreferenzen
+
+
+Zeitraum - von: 18.08.2025
+Zeitraum - bis: 31.12.2027
+Profile bis: 01.08.2025 um 14Uhr
+Auslastung: Vollzeit (2025: 106 PT / 2026 & 2027: je 220 PT)
+Tagessatz allin: 619€, 546 PT | davon 10 PT in FFM
+Projektsprache: deutsch
