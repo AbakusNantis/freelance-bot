@@ -40,9 +40,43 @@ def guess_gender(name: str) -> str:
     g = d.get_gender(first)  # 'male', 'female', 'mostly_male', 'mostly_female', 'andy' (androgyn), 'unknown'
     return g
 
+def split_name(full_name: str) -> dict:
+    if not isinstance(full_name, str) or not full_name.strip():
+        return {"first": None, "last": None}
+    
+
+    n = HumanName(full_name)
+    # HumanName erkennt z. B.:
+    #  - "Müller, Anna" → first="Anna", last="Müller"
+    #  - "Dr. Anna-Lena von der Heide" → title="Dr.", first="Anna-Lena", last="von der Heide"
+    first = n.first.strip() or None
+    last  = n.last.strip() or None
+
+    # Heuristische Nachschärfung für deutsche Namenszusätze:
+    # Wenn 'von/van/zu/…' irrtümlich in middle gelandet ist, hänge ihn an den Nachnamen an.
+    particles = {"von","van","vom","zu","zur","zum","de","der","den","del","della","du","di"}
+    middle_tokens = [t for t in n.middle.split() if t]
+    if middle_tokens:
+        # Falls middle ganz aus Partikeln besteht, zum Nachnamen umhängen
+        if all(mt.lower() in particles for mt in middle_tokens):
+            last = (" ".join(middle_tokens + ([last] if last else []))).strip()
+
+    # Fallback: Wenn kein last erkannt und es gibt genau zwei Wörter → nimm zweites als Nachname
+    if not last:
+        toks = [t for t in full_name.replace(",", " ").split() if t]
+        if len(toks) >= 2:
+            first = first or toks[0]
+            last = " ".join(toks[1:])
+
+    return {"first": first, "last": last}
+
+
+
 def enrich_df(df: pd.DataFrame) -> pd.DataFrame:
     # Guess gender
     df["gender"] = df["person"].apply(guess_gender)
+    name_parts = df["person"].apply(split_name)
+    df[["first_name", "last_name"]] = pd.DataFrame(name_parts.tolist(), index=df.index)
 
     # Gues surname
     _save_excel(df, "agencies_enriched.xlsx")
