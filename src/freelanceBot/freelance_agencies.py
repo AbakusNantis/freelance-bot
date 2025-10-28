@@ -3,6 +3,11 @@ import pandas as pd
 from nameparser import HumanName
 import gender_guesser.detector as gender
 
+def _save_excel(df: pd.DataFrame, excel_path: str):
+    with pd.ExcelWriter(excel_path, engine="openpyxl", mode="w") as writer:
+        df.to_excel(writer, index=False)
+    return excel_path
+
 def todays_list():
     fc = FreelanceActions(headless=False)
     fc.login()
@@ -35,16 +40,26 @@ def guess_gender(name: str) -> str:
     g = d.get_gender(first)  # 'male', 'female', 'mostly_male', 'mostly_female', 'andy' (androgyn), 'unknown'
     return g
 
+def enrich_df(df: pd.DataFrame) -> pd.DataFrame:
+    # Guess gender
+    df["gender"] = df["person"].apply(guess_gender)
+
+    # Gues surname
+    _save_excel(df, "agencies_enriched.xlsx")
+    return df
+
 
 
 
 def main():
-    todays_list()
-    df_cleaned = clean_new_list()
+    #todays_list()
+    #df_cleaned = clean_new_list()
+    df_cleaned = pd.read_excel("agencies_new_cleaned.xlsx")
+    df_enriched = enrich_df(df_cleaned)
     # Guess Gender
     # Gess Surname
     # Append to full list
 
 
 if __name__ == "__main__":
-    clean_new_list()
+    main()
