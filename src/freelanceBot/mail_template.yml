@@ -1,0 +1,69 @@
+mail_template: |-
+  {{ ansprache }} {{ name }},
+
+  unser Team verfügt über eine wachsende Zahl an Experten aus den Bereichen DevOps und Cloud Infrastruktur, sowie Künstlicher Intelligenz und Data Spaces.
+  Aktuell suchen wir Team-Beauftragungen, weniger Einzelbeauftragungen für einzelne Mitarbeiter, z. B. als
+  - Dienstleistungsvertrag mit Stundenkontingent (Time & Material) oder
+  - Werkvertrag / Statement of Work im Rahmen eines Rahmenvertrags mit Abruf.
+
+  Vermitteln Sie solche Team-/Kontingent-Projekte?
+
+  Gern sende ich Ihnen eine Kurzvorstellung mit Skills, Referenzen und verfügbarer Kapazität.
+
+  Ich freue mich auf Ihre Rückmeldung.
+
+  Mit freundlichen Grüßen
+
+  Bastian Knaus
+  Co-Founder at Enari
+  +49 176 666 78033
+
+mail_template_html: |-
+  <!doctype html>
+  <html lang="de">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Anfrage Team-/Kontingent-Projekte</title>
+      <style>
+        /* E-Mail-freundliches, sehr sparsames Styling */
+        body { margin:0; padding:0; }
+        .container { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.45; color: #111; }
+        p { margin: 0 0 12px; }
+        ul { margin: 0 0 12px 20px; padding: 0; }
+        li { margin-bottom: 6px; }
+        .muted { color: #555; }
+        .cta a { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <p>{{ ansprache }} {{ name }},</p>
+
+        <p>unser Team verfügt über eine wachsende Zahl an Experten aus den Bereichen DevOps und Cloud&nbsp;Infrastruktur, sowie Künstlicher&nbsp;Intelligenz und Data&nbsp;Spaces.</p>
+
+        <p>Aktuell suchen wir Team-Beauftragungen, weniger Einzelbeauftragungen für einzelne Mitarbeiter, z.&nbsp;B. als</p>
+        <ul>
+          <li>Dienstleistungsvertrag mit Stundenkontingent (Time&nbsp;&amp;&nbsp;Material) oder</li>
+          <li>Werkvertrag / Statement of Work im Rahmen eines Rahmenvertrags mit Abruf.</li>
+        </ul>
+
+        <p>Vermitteln Sie solche Team-/Kontingent-Projekte?</p>
+
+        <p class="cta">
+          {{ link_hinweis | default("Unsere Services können Sie ") }}
+          <a href="https://enari.com/services/" target="_blank" rel="noopener">{{ link_text | default("auf unserer Website") }}</a>
+          einsehen. Gern sende ich Ihnen eine Kurzvorstellung mit Skills, Referenzen und verfügbarer Kapazität.
+        </p>
+
+        <p>Mit freundlichen Grüßen<br>
+
+        <p><strong>Bastian Knaus</strong></p>
+        <p>Co-Founder at Enari</p>
+        <p>+49 176 666 78033</p>
+  
+        </p>
+      </div>
+    </body>
+  </html>
+
