@@ -157,7 +157,7 @@ class FreelanceActions:
                 link = card.query_selector("a.small.fw-semibold.link-warning")
                 if link:
                     href = link.get_attribute("href")
-                    if href != "":
+                    if href and href != "":
                         all_links.append(href)
 
         print(f"Received {len(all_links)} links.")
@@ -230,7 +230,8 @@ class FreelanceActions:
         
         except PlaywrightTimeoutError:
             return None
-        except:
+        except Exception as e:
+            print("projects_intel error:", e)
             return None
         
     def new_projects_intel(self, time_period, path_new_raw_full = PATH_NEW_RAW, path_new_agencies = PATH_NEW_AGENCIES):
@@ -289,16 +290,16 @@ class FreelanceActions:
         self.close
         return agency_list
 
-def main():
-    fc = FreelanceActions(headless=False)
+def main(time_period, headless = False):
+    fc = FreelanceActions(headless)
 
     # test_url = r'https://www.freelance.de/projekte/projekt-1236689-SAP-Manager-SF-HCM-m-w-d'
     # print (fc.projects_intel(test_url))
     # fc.new_projects_intel(1)
     # fc.close()
 
-    fc.scrape_freelance(1)
+    fc.scrape_freelance(time_period)
 
 if __name__ == "__main__":
-    main()
+    main(1)
     
